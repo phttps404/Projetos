@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">                                    <!--importando o arquivo css que possui as estilizações que eu defini-->
+    <title>Suporte</title>
+</head>
+<body>
+
+    <header class="cabecalho_2">                                                 <!--abrindo uma tag de cabeçalho e defindo uma classe para fins de estilização-->
+        <img class="logo_1" src="imagens/logo preta.png" alt="logo" width="100" height="100">        <!--Importando uma imagem que servirá de logo, definindo largura e altura-->
+
+        <nav>                                                                       <!--criando uma barra de navegação, atribuindo uma classe e adicionando um unico link que ao clicar, retorna para a pagina inicial-->
+            <a class="nav_item_1" href="Pagina inicial.html">Início</a>
+        </nav>
+     </header>
+
+     <main>
+        <div class="duvidas">                                                        <!--criando uma div para agrupar elementos, definindo uma classe para fins de estilização-->
+        <h3 id="duvtittle"> Principais dúvidas:</h3>                                    <!--titulo do conteudo da lista-->
+        <ul class="styleul" style="list-style-type:none;">                              <!--Criando uma ista NÃO ordenada, atribuindo classe, tabela sem estilização/decoração-->
+            <li>-Os meus dados serão compartilhados?</li>
+            <li>-Posso cancelar a incrição a hora que quiser?</li>
+            <li>-Não quero mais receber as notícias, o que faço?</li>
+            <li>-Por que não estou recebendo as notícias?</li> 
+        </ul>
+        </div>
+        <p class="explicacao">Os dados do usuário do PY NEWS, são estritamente confidenciais e zelamos pela sua segurança, utilizamos apenas para direcionar nossas notícias para você.<br>
+        A sua incrição pode ser cancelada a qualquer momento, basta entrar em contato com o nosso e-mail e falar com nossa ouvidoria.<br>
+        No caso de não estar recebendo as notícias, cancele sua inscrição e preencha o formulário no nosso site novamente e se atente na parte que diz <strong>Quero receber as noticias</strong>
+       </p>             <!--paragrado dando uma pincelado nas maiores duvidas dos usuarios-->
+
+       <div class="tabela">             <!--criando um div que englobará toda a tabela-->
+       <table border="1">               <!--definindo tamanho da borda da tabela-->
+        <caption class="contatos"><strong>CONTATOS</strong></caption>       <!--titulo da tabela com enfase em negrito-->
+        <thead>                     <!--agrupando o cabeçalho da tabela que levará titulos e colunas-->
+            <tr>                    <!--criando linha-->
+                <th>Setor</th>      <!--celula de um cabeçalho-->
+                <th>E-mail</th>
+            </tr>
+        </thead>
+        <tbody>                     <!--agrupando o conteudo do corpo-->
+            <tr>                    <!--nova linha-->
+                <td> Cancelamento de incrição </td>     <!--definindo uma celula de dados-->
+                <td> py_cancelamento@gmail.com </td>
+            </tr>
+            <tr>
+                <td> Reclamações </td>
+                <td> reclameaqui_py@gmail.com </td>
+            </tr>
+            <tr>
+                <td> Ajuda/suporte ao usuário </td>
+                <td> help_py@gmail.com </td>
+             
+            </tr>
+        </tbody>
+        <tfoot>                     <!--agrupando o conteudo do rodapé-->
+            <tr>
+                <td colspan="2">Nossos E-mails</td>         <!--celula de dados que ocupa 2 colunas-->
+            </tr>
+        </tfoot>
+    </table>
+        </div>
+        <div class="tutorial">
+        <video width="400" height="240" controls muted>         <!--adicionando um video de como preencher o formulario, com altura definida, nao iniciara automaticamente e sera mutado-->
+            <source src="tutorial.mp4" type="video/mp4" >
+            </video>
+        </div>
+     </main>
+    
+</body>
+</html>

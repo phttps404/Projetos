@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">                                <!--importando o arquivo css que possui as estilizações que eu defini-->
+    <title>Sobre nós</title>
+</head>
+<body>
+    <header class="cabecalho_2">                                         <!--abrindo uma tag de cabeçalho e defindo uma classe para fins de estilização-->
+        <img class="logo_1" src="imagens/logo preta.png" alt="logo" width="100" height="100">    <!--Importando uma imagem que servirá de logo, definindo largura e altura-->
+
+        <nav class="navegacao">
+            <a class="nav_item_1" href="Pagina inicial.html">Início</a>  <!--criando uma barra de navegação, atribuindo uma classe e adicionando um unico link que ao clicar, retorna para a pagina inicial-->
+        </nav>
+
+    </header >                                                           <!--fechando a tag de cabeçalho-->
+
+    <main class="principal">                                            <!--definindo uma tag que agrupará o conteúdo principal e dividi-lo em 2 seções, cada um com sua classe correspondente-->
+        <section class="sessao_1">
+            <p class="resumo">Olá querido expectador de notícias, começaremos dizendo quem somos nós<br> Somos uma plataforma que compatilha conhecimento, babados, noticias de última hora, tudo aquilo que um bom Brasileiro gosta.<br> Fundada em fevereiro de 2023 por Pedro Henrique Magnus e Yakira Praes de Freitas com o intuíto de manter o cidadão por dentro de todas as novidades de forma totalmente online, gratuita e de facil compartilhamento</p>
+            <!--abrindo uma tag de paragrafo e escrevendo um breve resumo, definindo uma classe para fins de estilização-->
+        </section>
+
+        <section class="sessao_fotos">              <!--segunda seção que carregará consigo as fotos dos criadores, definindo tambem uma classe-->
+            <div>                                   <!--criando uma div para agrupar elementos-->
+            <img class="foto" src="imagens/foto_pedro.jpg" alt="foto pedro" width="300" height="300">  <!--importando fotos, utilizando o alt para dar um texto alternativo caso a imagem não carregue e definindo a largura e altura-->
+            <p class="dados">Pedro Henrique estudante de informática<br> do IFSul Gravataí</p>      <!--resumo dos criadores-->
+            </div>
+            <div>
+                <img class="foto" src="imagens/foto_yakira.jpg" alt="foto yakira" width="300" height="300">
+                <p class="dados">Yakira Praes estudantre de Informática<br>do IFSul Gravataí
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

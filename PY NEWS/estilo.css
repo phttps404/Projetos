@@ -1,0 +1,239 @@
+*{
+    margin: 0;                  /*dando um "reset" universal em toda a pagina que esse css for chamado, tirando as possiveis pre-definições da pagina para aplicar as minhas*/
+    padding: 0;                 /*margem e espaço interior (padding) com valor 0, e sem decorações*/
+    text-decoration: none;
+}
+body{                                        
+    background-image: url(imagens/background\ neon.png);
+    background-attachment: fixed;                       /*Adicionando a imagem de fundo do site, com valor de NÃO repetir a imagem, modo fixo, e cover de modo que se ajuste conforme a tela.*/
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.cabecalho{
+    display:flex;                       /*chamando o elemento com a sua classe correspondente, utilizando flexbox para ajustar a posição do cabeçãlho e distancia, direção em linha, posicionar itens no centro, e pôr um espaço entre os itens*/
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;                      /*Adicionando um padding (distancia entre o elemento da sua parte exterior) e definindo uma cor de fundo*/
+    background-color:rgb(69, 33, 77);
+}
+.logo_1{
+    height: 90px;               /*chamando a classe ".logo_1" e definindo uma altura em pixels para a logo*/
+}
+.logo_1:hover{
+    transform:scale(1.5)            /*Colocando um movimento de "zoom" ao passar o mouse por cima da logo*/
+}
+.navegacao{
+    display: flex;                  /*declarando a navegação como flexbox para usar o "gap" que define o espaço entre os itens*/
+    gap: 40px;
+}
+.nav_item_1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(2, 0, 0);         /*Chamando os itens da navegação com a sua classe correspondente e definindo cor, estilo da fonte, tamanho da fonte e deixando-a em negrito*/
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 15px;        /*definindo uma borda solida com espessura de 15 pixels nos itens da navegação*/ 
+    border-style: solid;
+    padding: 5px;               /*adicionando um espaço do elemento da  sua parte exterior*/
+}
+a:hover{
+    color: rgb(212, 55, 243);       /*Adicionando uma cor e um efeito de zoom em cada item da barra de navegação quando o mouse for passar por cima*/
+    transform: scale(1.1);
+}
+.principal{
+    margin-bottom: 18px;                                /*indicando um espaçamento inferior*/
+    border-top: 0.2px solid rgb(212, 55, 243);      /*adicionando uma linha superior de borda*/
+    padding: 30px;                                      /*definindo uma distancia do conteudo do elemento da parte exterior.*/
+}
+.sessao_1{
+    display: flex;                      /*após o chamamento pela classe correspondente, tranformando a primeira sessao da pagina inicial em flexbox, direção em linha e alinhamento ao centro, aplicando uma distribuição igual aos itens no espaço disponivel*/
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
+}
+.conteudo{
+    display: flex;
+    flex-direction:column;      /*tranformando a classe conteudo em flexbox, com direção em coluna e posicionamento ao centro*/
+    align-items: center;
+}
+.titulo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 80px;            /*estilizando o titulo, aplicando estilo da fonte, deixando em negrito, tamanho da fonte e adicionando cor as letras do titulo*/
+    color:rgb(64, 23, 73);
+}
+.subtitulo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;          /*estilizando o titulo, aplicando estilo da fonte, deixando em negrito, tamanho da fonte e adicionando cor as letras do titulo*/
+    font-size: 48px;
+    color: rgb(64, 23, 73);
+}
+.sessao_2{
+    display: flex;              /*chamando a segunda section pela sua classe e tranformando-a em flexbox, com direção em coluno, alinhamento dos itens ao centro */
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;                  /*definindo espaço entre os itens*/
+    margin-top: 100px;          /*definindo um tamanho pra margem superior*/
+}
+.pergunta{
+    border-top: 0.2px solid wheat;      /*aplicando uma borda superior, definindo sua espessura, do tipo sólida e aplicando cor*/
+   padding-top: 50px;                       /*tamanho da distancia superior do conteudo do elemento fora dele*/
+}
+.pergunta{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(64, 23, 73);             /*estilizando o conteudo com a classe pergunta, aplicando tipo de fonte, cor das letras e tamanho da fonte*/
+    font-size: 25px;
+}
+.paragrafo{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;                   /*chamando o conteudo pela sua classe, aplicando tipo de fonte, cor das letras e definindo tamanho das letras*/
+    font-size: 20px;
+}
+.rodape{
+    margin-top: 10%;                    /*aplicando tamanho da margem superior do rodapé*/
+    background-color: rgb(69, 33, 77);         /*definindo uma cor de fundo*/
+    padding: 30px;                                  /*definindo o espaço do conteudo, do seu elemento exterior*/
+    border-top: 0.2px solid rgb(212, 55, 243);      /*criando uma borda superior e solida, e definindo uma espessura e cor*/
+}
+#frase{
+    text-align: center;     /*alinhando conteudo com id=frase ao centro e definindo tamanho da fonte*/
+    font-size: 40px;        
+
+}
+.cabecalho_2{
+    display: flex;                  /*tranformando o conteudo com a classe ".cabecalho_2" em flexbox, com direção em linha, alinhamento ao centro, e espaço igual dos itens no espaço disponivel*/
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;                      /*aplicando espaço interior do conteudo*/
+    background-color: rgb(69, 33, 77);      /*definindo uma cor de fundo para essa classe*/
+}
+.resumo{
+    padding: 60px;          /*definindo espaço interior do conteudo selecionado*/
+    font-size: 30px;        /*definindo tamanho da fonte*/
+    font-family:'Times New Roman', Times, serif;        /*aplicando estilo da fonte, e cor*/
+    color:indigo;
+    border-style: solid;        /*adicionando uma borda de estilo sólida*/
+}
+.sessao_fotos{
+    display: flex;          /*tranformando o conteudo com a classe ".sessao_fotos" em flexbox*/
+    flex-direction: row;    /*direção do conteudo em linha, alinhamento ao centro, espaço igual entte os elementos no espaço disponivel*/
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 60px;          /*definindo um tamanho pra parte superior de um conteudo interior*/
+}
+.foto{
+    border-radius: 50%;     /*definindo o arredondamento de um borda para o conteudo da classe .foto*/
+}
+.dados{
+    padding-top: 10px;   /*definindo um tamanho interior pra parte superior do conteudo*/
+    font-size:small;        /*aplicando um tamanho pequeno para a fonte*/
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*aplicando estilo da fonte e logo em seguida uma cor*/
+    color: white;
+}
+.news{
+    display: flex;          /*tranformando em flexbox, direção em linha, alinhamento ao centro, espaço igual entre os elementos no espaço disponivel, distanca de 20px entre os itens e um espaço interior pra parte superior do conteudo*/
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    gap: 20px;
+    padding-top: 100px;
+}
+.enunciado{
+    font-size: 20px;        /*definindo tamanho da fonte e estiloda fonte*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+button{
+    display: flex;          /*tranformando em flexbox, direção em linha, alinhamento ao centro, e um espaço interior do conteudo*/
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;        /*definindo o arredondamento da borda, estilo da fonte e tamanho da fonte*/
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:larger;  
+}
+img{
+    border-radius: 5%;          /*definindo o arredondamento da borda, estilo da fonte e tamanho da fonte*/
+}
+
+#apresentacao{
+    display: flex;              /*tranformando em flexbox, direção em linha, alinhamento ao centro, espaço igual entre os itens e um espaço interior do conteudo*/
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    
+}
+
+#titulocadastro{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:50px;
+    border-style:dashed;        /*aplicando o estilo da fonte, tamanho da fonte, estilo da borda, espaço interior do conteudo e uma cor de fundo*/
+    padding: 10px;
+    background-color: blueviolet;
+
+}
+
+input, select, textarea, button{
+    border-radius: 5px;     /*definindo uma borda arredondada*/
+  
+}
+
+.dados{
+    margin-bottom: 5px;     /*aplicando uma margem inferior, cor da fonte, estilo e tamanho*/
+    color: rgb(59, 7, 71);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+form{
+    text-align: center;         /*alinhando o conteudo com a classe ".form" ao centro*/
+}
+fieldset{
+    border: 0;                  /*retirando a borda do fieldset dando valor 0*/
+}
+textarea{
+    width: 300px;               /*definindo largura e altura do campo textarea*/
+    height: 90px;
+}
+.botaum{
+    display: flex;   /*tranformando em flexbox, direção em linha, distribuição no centro*/
+    flex-direction: row;
+    justify-content: center;  
+}
+.bootao{
+    background-color: rgb(191, 142, 238);           /*definindo cor de fundo do botao, cor das letras e cor da borda*/
+    color: rgb(46, 30, 61);
+    border-color: blueviolet;
+}
+.duvidas{
+    padding: 20px;      /*definindo uma espaço interior*/
+    text-align: center;     /*alinhamento do conteudo ao centro, definição de estilo da fonte e tamanho da fonte*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+.explicacao{
+    text-align: center;     /*alinhamento do conteudo ao centro, definição de estilo da fonte e tamanho da fonte*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    border-top: 5px solid;      /*definindo uma borda sólida superior e aplicando sua espessura e cor desejável*/
+    border-color: rgb(89, 27, 148);
+    padding: 30px;              /*definindo uma espaço interior*/
+}
+.tabela{
+    display: flex;              /*tranformando em flexbox, direção em linha, distribuição e alinhamento dos itens no centro*/
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;         /*alinhamento do texto da tabela no centro*/
+    padding: 5px;                /*definindo uma espaço interior*/
+}
+table{
+    border-color: blueviolet;       /*definindo cor da borda*/
+}
+.contatos{
+    font-family: 'Times New Roman', Times, serif;      /*applicando estilo da fonte*/
+}
+.tutorial{
+    padding-top: 30px;              /*definindo uma espaço interior da parte superior*/
+    text-align: center;             /*alinhando o texto ao centro*/
+}

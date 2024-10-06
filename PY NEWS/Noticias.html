@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">                   <!--importando o arquivo css que possui as estilizações que eu defini-->
+    <title>Notícias</title>
+</head>
+<body>
+    <header class="cabecalho_2">                                  <!--abrindo uma tag de cabeçalho e defindo uma classe para fins de estilização-->
+        <img class="logo_1" src="imagens/logo preta.png" alt="logo" width="100" height="100">          <!--Importando uma imagem que servirá de logo, definindo largura e altura-->
+
+        <nav>
+            <a class="nav_item_1" href="Pagina inicial.html">Início</a>              <!--criando uma barra de navegação, atribuindo uma classe e adicionando um unico link que ao clicar, retorna para a pagina inicial-->
+        </nav>
+    </header>
+
+    <main class="principal">                 <!--definindo uma tag que agrupará o conteúdo principal, e definindo sua classe correspondente-->
+        <div class="news">                      <!--criando uma div para agrupar elementos, definindo uma classe para fins de estilização-->
+            <article class="noticias">          <!--abertura de uma tag de artigo para conter informações independentes-->
+            <p class="enunciado">Aluno flagrado...</p>      <!--criando um tag de paragrafo pra dar um texto de suspense acima das imagens de noticia-->
+           <img src="imagens/flagra pedro.jpg"  alt="pedro_desesperado" width="300" height="300">   <!--importando foto de capa da noticia, utilizando o alt para dar um texto alternativo caso a imagem não carregue e definindo a largura e altura-->
+           <a href="aluno flagrado.html"><button>Notícia Completa</button></a>  <!--adionando um botao com link, que ao ser clicado levara a noticia que o usuario deseja ler-->
+        </article>
+        <article class="noticas">
+            <p class="enunciado">Aluno acusado de pedofilia por...</p>
+            <img src="imagens/caso Moises.jpg" alt="caso moises" width="300" height="300">
+            <a href="Aluno acusado de p....html"><button>Notícia Completa</button></a>
+        </article>
+        <article class="noticias">
+            <p class="enunciado">Briga feia é...</p>
+            <img src="imagens/antonio vs pedro.jpg" alt="briga entre alunos" width="300" height="300">
+            <a href="briga feia.html"><button>Notícia Completa</button></a>
+            </article>
+          
+        </div>
+        
+    </main>
+</body>
+</html>

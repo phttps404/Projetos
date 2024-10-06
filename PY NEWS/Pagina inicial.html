@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>                                              <!--onde ficará as configuraçoes não visiveis da pagina-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">       <!--importando o arquivo css que possui as estilizações que eu defini-->
+    <title>YP NEWS_INICIO</title>                   <!--titulo da pagina-->
+</head>                                             <!--obs: em quse tudo foi aplicado classes e id´s para fins de estilização no CSS-->
+<body>
+    <header class="cabecalho">          <!--abrindo uma tag de cabeçalho e defindo uma classe-->
+        <img class="logo_1" src="imagens/logo preta.png" alt="logo" width="100" height="100">  <!--Importando uma imagem que servirá de logo, definindo largura e altura-->
+
+        <nav class="navegacao">         <!--criando uma barra de navegação, atribuindo uma classe e adicionando links que irão para as paginas a qual deseja ir-->
+            <a href="sobre.html" class="nav_item_1">Sobre</a>
+            <a href="Noticias.html" class="nav_item_1">Noticias</a>
+            <a href="Suporte.html" class="nav_item_1">Suporte</a>
+            <a href="cadastro.html" class="nav_item_1">Cadastre-se</a>
+        </nav>                          <!--fechando a tag de navegação-->
+
+    </header >                      <!--fechando a tag de cabeçalho-->
+    
+    <main class="principal">        <!--definindo uma tag que agrupará o conteúdo principal e dividi-lo em 2 seções, cada um com sua classe correspondente-->
+
+        <section class="sessao_1">
+            <div class="conteudo">                                      <!--criando uma div para agrupar elementos-->
+                <h1 class="titulo">Seja bem-vindo (a)</h1>              <!--titulo e subtitulo de apresentação-->
+                <h2 class="subtitulo">Ao nosso site de notícias</h2>
+            </div>
+           
+        </section>
+                
+        <section class="sessao_2">
+            <h3 class="pergunta">Como receber nossas noticias por Whatsapp?</h3>        <!--sessão que dará a direção para o preenchimento do formulário-->
+            <p class="paragrafo">No menu de navegação clique em <strong>Cadastre-se</strong></p>
+            <p class="paragrafo">Preencha o nosso formulário com todas as informações</p>
+            <p class="paragrafo">Aguarde brevemente pela nossa mensagem</p>
+        </section>
+
+    </main>
+
+    <footer class="rodape">                     <!--criando um rodapé e atribuindo uma classe-->
+        <p id="frase"> NEWS <strong>PY</strong> JORNAL</p>      <!--criando um paragrafo com o nome da empresa, adicionando um id para quando for estilizar e colocando um strong para daruma enfase em negrito para o conteudo dentro dele-->
+    </footer>
+</body>
+</html>
